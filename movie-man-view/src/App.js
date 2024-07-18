@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import MoviesList from './components/MoviesList.js';
-
+import MovieDetails from './components/MovieDetails.js';
 function App() {
   return (
     <div className="App">

@@ -1,20 +1,14 @@
-import React, {useEffect, useState} from 'react';
-import axios from 'axios';
-
-const ReviewsList = ({movieId}) => {
-const [reviews,setReviews] = useState([]);
-
-    useEffect(() =>{
-        axios.get('http://localhost:8081/movies/${movieId}/reviews')
-            .then(response => {
-                setReviews(response.data);
-            })
-            .catch(error => {
-                console.error('ERORR fetching reviews: ',error)
-            })
-    },[movieId]);
-    return(
-    <div>
-        <h3>Reviews</h3>
-    )
+const ReviewsList = ({ reviews }) => {
+    return (
+        <div className="movie-reviews-list">
+            <h3>Reviews:</h3>
+            <ul>
+                {reviews.map((review, index) => (
+                    <li key={index}> Title: {review.title} <br/><br/> Rating:{review.rating} <br/><br/> Review: {review.review}</li>
+                ))}
+            </ul>
+        </div>
+    );
 };
+
+export default ReviewsList;

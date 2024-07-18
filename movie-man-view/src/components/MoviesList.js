@@ -1,37 +1,62 @@
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import React,{useEffect, useState} from 'react';
+import '../MoviesList.css';
+import MovieDetails from './MovieDetails';
+import Modal from 'react-modal'; // Import react-modal
 
 const MoviesList = () => {
-    const[movies,setMovies] = useState([]);
+  const [movies, setMovies] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false); // Add modal state
 
-    useEffect(()=>{
+  useEffect(() => {
     axios.get('http://localhost:8081/movies')
-        .then(response => {
-            setMovies(response.data)
-        })
-        .catch(error => {
-            console.error('Error finding movies:', error);
-        });
+      .then(response => {
+        setMovies(response.data);
+      })
+      .catch(error => {
+        console.error('Error finding movies:', error);
+      });
+  }, []);
 
-    }, []);
+  const handleMovieClick = (movie) => {
+    setSelectedMovie(movie);
+    setIsModalOpen(true); // Open the modal
+  };
 
-    return (
-        <div>
-        <h2>Movie List</h2>
-            <ul>
-            {movies.map(movie => (
-                    <li key={movie.id}>
-                        <h3>{movie.title} ({movie.description})</h3>
-                        <p>Rating:{movie.rating}</p>
-                        <hr />
+  const closeModal = () => {
+    setIsModalOpen(false); // Close the modal
+  };
 
-
-                    </li>
-                ))}
-            </ul>
+  return (
+    <div className="movies-container">
+      {movies.map(movie => (
+        <div
+          className="movie-card"
+          key={movie.id}
+          onClick={() => handleMovieClick(movie)}
+        >
+          {/* Render movie card content */}
+          <div className="movie-poster">
+            {/* Future insert image here */}
+          </div>
+          <div className="movie-details">
+            <h2>{movie.title}</h2>
+            <p>{movie.rating}</p>
+          </div>
         </div>
-    );
-
+      ))}
+      {/* Render MovieDetails in a modal */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Movie Details"
+      >
+        {selectedMovie && <MovieDetails movie={selectedMovie} />}
+        <button onClick={closeModal}>Close</button>
+      </Modal>
+    </div>
+  );
 };
 
 export default MoviesList;
