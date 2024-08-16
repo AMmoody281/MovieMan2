@@ -6,12 +6,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-            <h1>Movie Reviews</h1>
+            <h1> Reviews</h1>
       </header>
       <main>
         <MoviesList />
       </main>
     </div>
+
   );
 }
 

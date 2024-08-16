@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0e9bbf52-cc02-4b02-b0fd-02ad27946037" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../MovieMan/src/main/java/com/MovieMan/MovieMan/Model/MovieEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MovieMan/src/main/java/com/MovieMan/MovieMan/Model/MovieEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieMan/src/main/java/com/MovieMan/MovieMan/Repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MovieMan/src/main/java/com/MovieMan/MovieMan/Repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieMan/src/main/java/com/MovieMan/MovieMan/Service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MovieMan/src/main/java/com/MovieMan/MovieMan/Service/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie-man-view/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-man-view/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie-man-view/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-man-view/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie-man-view/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-man-view/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie-man-view/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-man-view/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie-man-view/src/MoviesList.css" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-man-view/src/MoviesList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie-man-view/src/components/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-man-view/src/components/MoviesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/MoviesList.css" beforeDir="false" afterPath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/MoviesList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components/MovieDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components/MoviesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components/ReviewsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components/ReviewsList.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MovieMan" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2kb5rXkzUWIapEH6QvVTf62E5Mm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/AM03688/Repos/MovieMan2/movie-man-view2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MovieMan/MovieMan2/movie-man-view/src/components" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e9bbf52-cc02-4b02-b0fd-02ad27946037" name="Changes" comment="" />
+      <created>1723539634476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723539634476</updated>
+    </task>
+    <servers />
+  </component>
+</project>

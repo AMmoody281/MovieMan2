@@ -36,7 +36,7 @@ transform:scale(1.05);
     margin:5px 0;
     color: #666;
 }
-/* Example styles for the overlay */
+
 .movie-modal-overlay {
   position: fixed;
   top: 0;

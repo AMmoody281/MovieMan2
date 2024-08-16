@@ -2,22 +2,28 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../MoviesList.css';
 import MovieDetails from './MovieDetails';
-import Modal from 'react-modal'; // Import react-modal
+import Modal from 'react-modal';
 
 const MoviesList = () => {
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false); // Add modal state
 
-  useEffect(() => {
-    axios.get('http://localhost:8081/movies')
-      .then(response => {
-        setMovies(response.data);
-      })
-      .catch(error => {
-        console.error('Error finding movies:', error);
-      });
-  }, []);
+   useEffect(() => {
+      // Fetch movies
+      const fetchMovies = async () => {
+        try {
+          const response = await axios.get('http://localhost:8081/movies');
+          setMovies(response.data);
+        } catch (error) {
+          console.error('Error finding movies:', error);
+        }
+      };
+
+      fetchMovies();
+
+
+    }, []);
 
   const handleMovieClick = (movie) => {
     setSelectedMovie(movie);

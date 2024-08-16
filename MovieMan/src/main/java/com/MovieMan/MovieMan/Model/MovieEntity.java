@@ -1,7 +1,6 @@
 
 package com.MovieMan.MovieMan.Model;
 
-import com.MovieMan.MovieMan.Tools.PrettyPrintingMap;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -66,14 +65,9 @@ public class MovieEntity {
 
         return result;
     }
-    public MovieEntity addReview(ReviewEntity review){
-        this.reviews.add(review);
-        return this;
-    }
     @Override
     public String toString(){
-        return String.format("( [ID: %s ] - [title: %s] - [genre: %s] - [description: %s] - [cast-role: %s] )",
-                getId(), getTitle(), genreToString(), getDescription(), new PrettyPrintingMap<String,String>(castAndRole));
+        return String.format("( [ID: %s ] - [title: %s] - [genre: %s] - [description: %s]s )",
+                getId(), getTitle(), genreToString(), getDescription());
         }
-
 }

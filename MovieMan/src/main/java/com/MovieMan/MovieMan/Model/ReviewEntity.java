@@ -26,6 +26,5 @@ public class ReviewEntity {
     private String review;
 
     private float rating;
-//    @DBRef
-//    private UserEntity user;
+
 }

@@ -3,11 +3,8 @@ package com.MovieMan.MovieMan.Service;
 import com.MovieMan.MovieMan.Model.MovieEntity;
 import com.MovieMan.MovieMan.Model.ReviewEntity;
 import com.MovieMan.MovieMan.Repository.MovieRepository;
-import com.MovieMan.MovieMan.Repository.ReviewRepository;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,9 +15,6 @@ import java.util.Optional;
 public class MovieServiceImpl implements MovieService{
     @Autowired
     private MovieRepository movieRepository;
-
-    @Autowired
-    private ReviewRepository reviewRepository;
 
     @Autowired
     private MongoTemplate mongoTemplate;
@@ -64,7 +58,8 @@ public class MovieServiceImpl implements MovieService{
 
     @Override
     public List<MovieEntity> searchByTitle(String titleSearch) {
-        return movieRepository.findMoviesByTitle(titleSearch);
+//        return movieRepository.findMoviesByTitle(titleSearch);
+        return movieRepository.findByTitleContainingIgnoreCase(titleSearch);
 //        List<MovieEntity> results = new ArrayList<>();
 //        for(MovieEntity movie:findAll()){
 //                if (movie.getTitle().equals(titleSearch)){

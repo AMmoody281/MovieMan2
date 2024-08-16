@@ -23,9 +23,7 @@ public interface MovieRepository extends MongoRepository<MovieEntity, String>, C
     @Query(value="{'id':?0 }", fields = "{reviews : 1}")
     List<ReviewEntity> findReviewsByMovieId(String movieId);
 
+    List<MovieEntity> findByTitleContainingIgnoreCase(String title);
 
 }
-//parent child documents
-// custom query
 
-//use mongo client instead
